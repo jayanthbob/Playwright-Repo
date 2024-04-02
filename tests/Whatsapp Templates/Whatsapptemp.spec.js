@@ -118,5 +118,7 @@ await page.locator('div').filter({ hasText:'None'}).nth(1).click();
 await page.getByText('Quick reply').click();
 await page.locator("xpath=//input[@id='mat-input-9']").fill('Random Text 123')
 await page.locator("xpath=//span[normalize-space()='Submit']").click()
+await page.waitForTimeout(2000)
+
 
 })
